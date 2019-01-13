@@ -52,4 +52,4 @@ order: 1
 ![](attached/wedge.png)
 
 - Stewart 6.2 Exercise 46
-- A wedge cut out of a circular cylinder of radius 4 by two planes. One plane is perpendicular to the axis of the cylinder. The other intersects the first at an angle of 30$^circ$ along a diameter of the cylinder.
+- A wedge cut out of a circular cylinder of radius 4 by two planes. One plane is perpendicular to the axis of the cylinder. The other intersects the first at an angle of 30$^\circ$ along a diameter of the cylinder.
