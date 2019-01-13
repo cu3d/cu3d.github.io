@@ -11,7 +11,7 @@ defaults:
       layout: "default"
 
     scope:
-      path: "attachments"
+      path: "attached"
     values:
       permalink: /:name
 

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width">
+  <title>catalog (3D models at CU)</title>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      inlineMath: [ ['$','$'] ],
+      displayMath: [ ['$$','$$'] ], 
+      processEscapes: true
+    },
+    "HTML-CSS": { availableFonts: ["TeX"] }
+  });
+
+    MathJax.Hub.Queue(function() {
+    // Fix <code> tags after MathJax finishes running. This is a
+    // hack to overcome a shortcoming of Markdown. Discussion at
+    // https://github.com/mojombo/jekyll/issues/199
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js">
+</script>
+
+  <style type="text/css">
+    /* License: CC0 */
+
+body {
+  font-family: "Neue Helvetica W01","Helvetica Neue",Helvetica,Arial,sans-serif; 
+  color: #333333 ;
+}
+
+main, footer {
+  line-height: 1.4;
+  margin: auto;
+  max-width: 40rem;
+  text-align: left;
+  width: 93%;
+  word-wrap: break-word;
+}
+
+footer { font-size: 80%; }
+
+nav#site_navigation {
+    font-size: 80%;
+    /* See http://stackoverflow.com/a/324553 ; this ensures that the
+     navigation links (left side) and search bar (right side) play
+     nicely */
+    overflow: hidden;
+}
+
+div#toc {
+    font-size: 80%;
+}
+
+dl#yaml_header_data {
+    font-size: 80%;
+}
+
+h1 { text-transform: uppercase; }
+h2 { border-bottom: 1px solid #ccc; }
+h1, h2, h3, h4, h5, h6 { 
+  font-family: "Neue Helvetica W01","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 120%;
+  font-weight: normal;
+}
+
+a:link, a:visited { color: #006db1; }
+a { text-decoration: none; }
+a:hover, a:active { text-decoration:underline; }
+a.anchorjs-link:hover, a.anchorjs-link:active { text-decoration: none; }
+
+blockquote {
+    border-left: 0.25em solid #ccc;
+    margin: 0px;
+    padding-left: 1.5em;
+}
+
+code {
+    font-family: "Inconsolata",monospace;
+    color: #586e75;
+    background-color: #f6f6f6;
+    padding-left: 0.1em;
+    padding-right: 0.1em;
+    word-wrap: normal;
+    border-radius: 0.2em;
+}
+
+pre code {
+    display: block;
+    line-height: 1.2;
+    max-height: 400px;
+    overflow: auto;
+    padding: 0.5em;
+}
+
+pre {
+    font-family: inherit;
+    line-height: 1.4;
+}
+
+table {
+    border-bottom: 2px solid #333;
+    border-collapse: collapse;
+    border-top: 2px solid #333;
+    margin: 0px auto; /* center table */
+}
+
+table th {
+    border-bottom: 1px solid #333;
+    font-weight: normal;
+    padding: 0px 10px;
+    vertical-align: top;
+}
+
+table td {
+    padding: 0px 10px;
+    vertical-align: top;
+}
+
+li {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em; 
+}
+
+@media screen and (max-width: 40rem) {
+    html { 
+      font-size: 80%; 
+    }
+    main { 
+      padding-left: 5px ;
+      padding-right: 5px ;
+    }
+    body { 
+      padding: 0px; 
+    }
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+    .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight, .highlight .w {
+  color: #586e75;
+}
+.highlight .err {
+  color: #002b36;
+  background-color: #dc322f;
+}
+.highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs {
+  color: #657b83;
+}
+.highlight .cp {
+  color: #b58900;
+}
+.highlight .nt {
+  color: #b58900;
+}
+.highlight .o, .highlight .ow {
+  color: #93a1a1;
+}
+.highlight .p, .highlight .pi {
+  color: #93a1a1;
+}
+.highlight .gi {
+  color: #859900;
+}
+.highlight .gd {
+  color: #dc322f;
+}
+.highlight .gh {
+  color: #268bd2;
+  background-color: #002b36;
+  font-weight: bold;
+}
+.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+  color: #6c71c4;
+}
+.highlight .kc {
+  color: #cb4b16;
+}
+.highlight .kt {
+  color: #cb4b16;
+}
+.highlight .kd {
+  color: #cb4b16;
+}
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+  color: #859900;
+}
+.highlight .sr {
+  color: #2aa198;
+}
+.highlight .si {
+  color: #d33682;
+}
+.highlight .se {
+  color: #d33682;
+}
+.highlight .nn {
+  color: #b58900;
+}
+.highlight .nc {
+  color: #b58900;
+}
+.highlight .no {
+  color: #b58900;
+}
+.highlight .na {
+  color: #268bd2;
+}
+.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mb, .highlight .mx {
+  color: #859900;
+}
+.highlight .ss {
+  color: #859900;
+}
+
+  </style>
+</head>
+
+<body>
+<nav id="site_navigation">
+  <!--
+    See
+      http://stackoverflow.com/questions/37103/css-make-divs-align-horizontally
+    for how the div elements are managed.
+  -->
+   <div style="float:left;">
+       
+      
+      <a 
+         
+          style="font-weight:bold" 
+         
+          href="/">catalog</a> |
+      
+      <a 
+         
+          href="/check-out.html">check-out</a> |
+      
+     <a href="https://raw.githubusercontent.com/cu3d/cu3d.github.io/master/index.md">source</a> |
+     <a href="https://github.com/cu3d/cu3d.github.io/commits/master/index.md">history</a>
+  </div>
+  <div style="float:right;">
+    <!--
+      See
+        - http://stackoverflow.com/a/13379065/3422337
+        - http://kaspars.net/blog/wordpress/how-to-add-google-site-search
+        - http://www.vanderbilt.edu/searchsupport/code-samples.php
+    -->
+    <form name="google-search" action="https://google.com/search" method="get">
+      <fieldset style="border:0;">
+        <input type="hidden" name="sitesearch" value="https://cu3d.github.io" />
+        <input name="q" type="text" />
+        <input type="submit" name="btnG" value="search" />
+      </fieldset>
+    </form>
+  </div>
+</nav>
+<script src="/assets/js/anchor.min.js"></script>
+
+
+  <main>
+
+  
+<h1 id="catalog-of-3d-models">Catalog of 3D models</h1>
+
+<h2 id="monkey-saddle">Monkey Saddle</h2>
+
+<p><img src="attached/monkeysaddle.png" alt="" /></p>
+
+<ul>
+  <li>Stewart 11.7 Maximum and Minimum values</li>
+  <li>A surface which a monkey can straddle with both legs and his tail. It is given by the equation $z=x^3-3xy^2$.</li>
+  <li>The monkey saddle has a single critical point. The second derivative test is not sufficient to classify this critical point; it turns out to be a saddle point.</li>
+</ul>
+
+<h2 id="cross-sections">Cross sections</h2>
+
+<p><img src="attached/crosssections.png" alt="" /></p>
+
+<ul>
+  <li>Stewart 6.2 Volumes of Solids by Cross Sections</li>
+  <li>These volumes all have a fixed bases given by circles, squares, or parabolas and have cross-sections given by rectangles or triangles.</li>
+  <li>These cross-sections can be more easily seen by the discrete approximations to the volumes.</li>
+</ul>
+
+<h2 id="paraboloids">Paraboloids</h2>
+
+<p><img src="attached/paraboloids.png" alt="" /> <br />
+<img src="attached/paraboloids2.png" alt="" /></p>
+
+<ul>
+  <li>Stewart 6.2-6.3 Volumes of Solids of Revolution</li>
+  <li>These models show the volume of a solid paraboloid being approximated using the disk and shell methods of integration.</li>
+</ul>
+
+<h2 id="saddle">Saddle</h2>
+
+<p><img src="attached/saddle.png" alt="" /></p>
+
+<ul>
+  <li>Stewart 11.7 Maximum and Minimum values</li>
+  <li>The surface given by the equation $z=x^2-y^2$ has a critical point at the origin that is neither a relative maximum nor a relative minimum.</li>
+</ul>
+
+<h2 id="triangle-parabola">Triangle parabola</h2>
+
+<p><img src="attached/triangleparabola.png" alt="" /></p>
+
+<ul>
+  <li>Stewart 6.2 Exercise 43</li>
+  <li>The base of the solid is the region enclosed by the parabola $y=1-x^2$ and the $x$-axis. The cross-sections perpendicular to the $x$-axis are isosceles triangles with height equal to the base.</li>
+</ul>
+
+<h2 id="wedge">Wedge</h2>
+
+<p><img src="attached/wedge.png" alt="" /></p>
+
+<ul>
+  <li>Stewart 6.2 Exercise 46</li>
+  <li>A wedge cut out of a circular cylinder of radius 4 by two planes. One plane is perpendicular to the axis of the cylinder. The other intersects the first at an angle of 30$^circ$ along a diameter of the cylinder.</li>
+</ul>
+
+
+  </main>
+
+<footer>
+<p align="right" xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
+  <a href="https://en.wikipedia.org/wiki/Creative%20Commons" title="Wikipedia: Creative Commons">Creative Commons</a> 
+  <a href="http://creativecommons.org/about/cc0">public domain (CC-0)</a>
+</p>
+</footer> <script>
+    anchors.add();
+  </script>
+</body>
+</html>
+
