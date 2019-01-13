@@ -9,6 +9,10 @@ order: 1
 
 # Catalog of 3D models
 
+## What are these?
+
+> Mathematics can be hard to visualize. To help with this, the mathematics department at CU Boulder is printing 3D models to bring to life key concepts from calculus. Come play with weird surfaces, volumes, and so much more!
+
 ## Monkey Saddle
 
 ![](attached/monkeysaddle.png)

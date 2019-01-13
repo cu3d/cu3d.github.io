@@ -12,9 +12,6 @@ order: 2
 
 ![](attached/crosssections.png)
 
-## What are these?
-
-Mathematics can be hard to visualize. To help with this, the mathematics department is printing 3D models to bring to life key concepts from calculus. Come play with weird surfaces, volumes, and so much more!
 
 ## Who are these for?
 
