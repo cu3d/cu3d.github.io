@@ -23,7 +23,7 @@ order: 1
 
 ## Paraboloids
 
-<img src="attached/paraboloids.png" width="10%">  
+<img src="attached/paraboloids.png" class="mimg">  
 ![](attached/paraboloids2.png)
 
 - Supports Stewart 6.2-6.3 Volumes of Solids of Revolution
